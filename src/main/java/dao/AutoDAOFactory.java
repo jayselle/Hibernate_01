@@ -2,8 +2,7 @@ package dao;
 
 public class AutoDAOFactory {
 
-    public AutoDAO createAutoDAO(){
-
+    public static AutoDAO createAutoDAO(){
         return new AutoDAOImp();
     }
 

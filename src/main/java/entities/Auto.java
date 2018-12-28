@@ -59,6 +59,10 @@ public class Auto implements Serializable {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getMarca() {
         return marca;
     }

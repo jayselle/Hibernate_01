@@ -1,6 +1,7 @@
 package manager;
 
 import entities.Auto;
+import entities.Concesionario;
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;
 import org.hibernate.Session;
@@ -74,6 +75,7 @@ public abstract class SessionManager {
 
     private static void registerMappers(Configuration config) throws MappingException {
         config.addAnnotatedClass(Auto.class);
+        config.addAnnotatedClass(Concesionario.class);
     }
 
 }

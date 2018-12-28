@@ -5,12 +5,13 @@ import java.util.List;
 
 public interface AutoDAO {
 
-    public void consultarAutos();
-    public void showListAutos(List<Auto> listaAutos);
-    public void consultarAutosSegunMarca(String unaMarca);
-    public void consultarAutosSegunModelo(String unModelo);
-    public void obtenerAutosCaros(Double precio);
-    public void insertarAuto(Auto a);
+    void consultarAutos();
+    void showListAutos(List<Auto> listaAutos);
+    void consultarAutosSegunMarca(String unaMarca);
+    void consultarAutosSegunModelo(String unModelo);
+    void obtenerAutosCaros(Double precio);
+    void insertarAuto(Auto a);
+    List<Auto> obtenerAutosConPaginacion(int registroInicial, int cantidad);
 
 }
 

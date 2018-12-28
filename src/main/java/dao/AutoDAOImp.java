@@ -69,7 +69,6 @@ public class AutoDAOImp implements AutoDAO{
 
     @Override
     public void insertarAuto(Auto a) {
-
         Session sesion = null;
         Transaction transaction = null;
 
@@ -99,4 +98,15 @@ public class AutoDAOImp implements AutoDAO{
         }
 
     }
+
+    public List<Auto> obtenerAutosConPaginacion(int registroInicial, int cantidad){
+        Session sesion = SessionManager.getSession();
+        Query query = sesion.createQuery("FROM Auto");
+        query.setMaxResults(cantidad);
+        query.setFirstResult(registroInicial);
+        List<Auto> autos = query.list();
+        sesion.close();
+        return autos;
+    }
+
 }
