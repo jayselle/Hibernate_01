@@ -23,6 +23,16 @@ public class MainRunner {
         //autoDao.obtenerAutosCaros(400000d);
         //autoDao.insertarAuto(new Auto("Chevrolet Corsa", "2002", Date.valueOf("2002-01-10"), 120000d));
         //concesDao.consultarConcesionarios();
+        //autoDao.getAutosFechaVenta();
+        //autoDao.getAutosBetweenFechaVenta("2018-12-01","2018-12-30");
+        //autoDao.getAutosPorMarcaLetra("c");
+        //autoDao.getAutosPorPrecio(400000);
+        //autoDao.getCantAutos();
+        //autoDao.getCantMarcas();
+        //autoDao.getMaxPrice();
+        //autoDao.getAvgPrice();
+        //autoDao.getTotalVentaPorMarca();
+        //autoDao.getAutosYConcesionarios();
 
     }
 
